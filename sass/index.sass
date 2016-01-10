@@ -1,0 +1,81 @@
+%clearfix 
+    &:before
+        content: ""
+        display: table
+    &:after 
+        content: ""
+        display: table
+        clear: both
+    zoom: 1
+
+body
+    font-family: Roboto, Arial
+    margin: 2em
+    color: #666
+    font-size: 12px
+
+.weather-forecast
+    width: 100%
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+    padding: 10px
+
+.location
+    font-size: 3em
+
+.current
+    @extend %clearfix
+
+.visual
+    width: 50%
+    float: left
+
+.temp
+    font-size: 2.5em
+    display: inline-block
+    vertical-align: top
+
+.scale
+    display: inline-block
+    vertical-align: top
+    margin-top: 15px
+
+.description
+    width: 50%
+    float: left
+
+.precip:before
+    content: 'Preciptation : '
+
+.humidity:before
+    content: 'Humidity : '
+
+.wind:before
+    content: 'Wind : '
+
+.pollen:before
+    content: 'Pollen Count : '
+
+.icon
+    display: inline-block
+    width: 64px
+    height: 64px
+    background-size: contain
+
+.seven-days
+    div
+        vertical-align: middle
+
+.pcount:before
+    content: 'Pollen'
+    display: block
+    
+.cloudy
+    background-image: url('/images/cloudy.png')
+.pc
+    background-image: url('/images/partly_cloudy.png')
+.rsc
+    background-image: url('/images/rain_s_cloudy.png')
+.sunny
+    background-image: url("/images/sunny.png")
+.thunder
+    background-image: url("/images/thunderstorms.png")
