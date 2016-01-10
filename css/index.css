@@ -83,23 +83,23 @@ body {
 }
 
 .cloudy {
-  background-image: url("../images/cloudy.png");
+  background-image: url("images/cloudy.png");
 }
 
 .pc {
-  background-image: url("../images/partly_cloudy.png");
+  background-image: url("images/partly_cloudy.png");
 }
 
 .rsc {
-  background-image: url("../images/rain_s_cloudy.png");
+  background-image: url("images/rain_s_cloudy.png");
 }
 
 .sunny {
-  background-image: url("../images/sunny.png");
+  background-image: url("images/sunny.png");
 }
 
 .thunder {
-  background-image: url("../images/thunderstorms.png");
+  background-image: url("images/thunderstorms.png");
 }
 
 /*# sourceMappingURL=index.css.map */
